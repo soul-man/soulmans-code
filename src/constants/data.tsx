@@ -1,0 +1,73 @@
+import { DialogMintHeaven } from "../components/portfolio/dialogs/DialogMintHeaven";
+import { DialogCurioInsights } from "../components/portfolio/dialogs/DialogCuioInsights";
+import { DialogFirstMovers } from "../components/portfolio/dialogs/DialogFirstMovers";
+import { DialogEasyNft } from "../components/portfolio/dialogs/DialogEasyNft";
+  
+  export const portfolioData = [
+    {
+      id: 'mint-heaven',
+      title: 'Mint Heaven',
+      logo: '/images/portfolio/mint-heaven/logo.png',
+      subtitle: 'NFT Platform for Airdrop Farmers',
+      description: 'Mint NFTs seamlessly on multiple Blockchains. A fully responsive web3 platform built with React, Node.js, and Xata.',
+      bgClass: 'intro-mint-heaven',
+      demoLink: 'https://www.mint-heaven.xyz/',
+      githubLink: 'https://github.com/soul-man/mint-heaven',
+      DialogContent: DialogMintHeaven,
+    },
+    {
+      id: 'curio-insights',
+      title: 'Curio Insights',
+      logo: '/images/portfolio/curio-dao/logo.png',
+      subtitle: 'Blockchain Dashboard',
+      description: 'Bundling crypto related data into one place. Real-time market data from Curio Gas Token (CGT).',
+      bgClass: 'intro-curio-insights',
+      demoLink: 'https://curio-insights.vercel.app/',
+      githubLink: 'https://github.com/soul-man/curio',
+      DialogContent: DialogCurioInsights,
+    },
+    {
+      id: 'first-movers',
+      title: 'First Movers Club',
+      logo: '/images/portfolio/first-movers/logo.png',
+      subtitle: 'NFT Collection',
+      description: 'Full Stack NFT Collection created with Blender 3D and Python.',
+      bgClass: 'intro-fm-yellow',
+      demoLink: 'https://first-movers.club/',
+      githubLink: 'https://github.com/soul-man/first-movers-club',
+      DialogContent: DialogFirstMovers,
+    },
+    {
+      id: 'nft-tracker',
+      title: 'EASY NFT',
+      logo: '/images/portfolio/nft-tracker/logo.png',
+      subtitle: 'NFT Portfolio Tracker',
+      description: 'Track your NFTs across multiple Blockchains. Create tax reports and more.',
+      bgClass: 'intro-nft-tracker',
+      demoLink: undefined,
+      githubLink: undefined,
+      DialogContent: DialogEasyNft,
+    },
+    {
+      id: 'art-box',
+      title: 'ART.BOX',
+      logo: '/images/portfolio/art-box/logo.png',
+      subtitle: 'NFT Minting Plattform',
+      description: 'Create and store immersive art generated NFTs on the blockchain.',
+      bgClass: 'intro-art-box',
+      demoLink: undefined,
+      githubLink: undefined,
+      DialogContent: DialogEasyNft,
+    },
+    {
+      id: 'art-box-marketplace',
+      title: 'ART.BOX - Marketplace',
+      logo: '/images/portfolio/art-box/logo.png',
+      subtitle: 'NFT Marketplace',
+      description: 'Trade immersive art NFTs',
+      bgClass: 'intro-art-box-marketplace',
+      demoLink: undefined,
+      githubLink: undefined,
+      DialogContent: DialogEasyNft,
+    },
+  ];
