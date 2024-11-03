@@ -1,15 +1,16 @@
 import React from 'react';
+import Image from 'next/image';
 
 export const DialogEasyNft = () => (
   <div className="grid grid-cols-12 gap-4">
     <div className="col-span-8 row-span-2">
-      <img src="/images/portfolio/nft-tracker/main.png" alt="EASY NFT Tracker" className="w-full h-full object-cover rounded-lg" />
+      <Image src="/images/portfolio/nft-tracker/main.png" alt="EASY NFT Tracker" className="w-full h-full object-cover rounded-lg" />
     </div>
     <div className="col-span-4">
-      <img src="/images/portfolio/nft-tracker/feature1.png" alt="Feature 1" className="w-full h-full object-cover rounded-lg" />
+      <Image src="/images/portfolio/nft-tracker/feature1.png" alt="Feature 1" className="w-full h-full object-cover rounded-lg" />
     </div>
     <div className="col-span-4">
-      <img src="/images/portfolio/nft-tracker/feature2.png" alt="Feature 2" className="w-full h-full object-cover rounded-lg" />
+      <Image src="/images/portfolio/nft-tracker/feature2.png" alt="Feature 2" className="w-full h-full object-cover rounded-lg" />
     </div>
     <div className="col-span-12 rounded-lg">
       <h3 className="font-normal mb-4 text-primary text-2xl text-blue-500">EASY NFT - NFT Portfolio Tracker</h3>

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { MessageSquare } from "lucide-react"
@@ -13,13 +13,19 @@ interface FormErrors {
     message?: string
 }
 
+interface FormData {
+    name: string
+    email: string
+    subject: string
+    message: string
+}
+
 export default function ContactDialog() {
     const {
         register,
         handleSubmit,
         reset,
-        formState: { errors }
-    } = useForm()
+    } = useForm<FormData>() 
 
     const [disabled, setDisabled] = useState(false)
     const [alertInfo, setAlertInfo] = useState({
@@ -36,11 +42,7 @@ export default function ContactDialog() {
     const [isFormValid, setIsFormValid] = useState(false)
     const [formErrors, setFormErrors] = useState<FormErrors>({})
 
-    useEffect(() => {
-        validateForm()
-    }, [name, email, subject, message])
-
-    const validateForm = () => {
+    const validateForm = useCallback(() => {
         const errors: FormErrors = {}
 
         if (!name) {
@@ -71,9 +73,13 @@ export default function ContactDialog() {
 
         setFormErrors(errors)
         setIsFormValid(Object.keys(errors).length === 0)
-    }
+    }, [name, email, subject, message])
 
-    const onSubmit = async (data: any) => {
+    useEffect(() => {
+        validateForm()
+    }, [validateForm])
+
+    const onSubmit = async (data: FormData) => {
         try {
             setDisabled(true)
             
@@ -129,7 +135,7 @@ export default function ContactDialog() {
             </DialogTrigger>
             <DialogContent className="sm:max-w-[700px] max-h-[80vh] overflow-y-auto bg-background border-2 border-accent-primary rounded-2xl">
                 <DialogHeader>
-                    <DialogTitle className="text-2xl font-bold text-headline">Let's Connect</DialogTitle>
+                    <DialogTitle className="text-2xl font-bold text-headline">Let&apos;s Connect</DialogTitle>
                 </DialogHeader>
                 <div className="mt-3">
                     <p className="text-text-70 text-lg mb-8">

@@ -10,13 +10,13 @@ export const DialogMintHeaven = () => (
   <div className="grid grid-cols-12 gap-3">
     {/* Intro Images */}
     <div className="col-span-8 row-span-2">
-      <img src="/images/portfolio/mint-heaven/main.png" alt="Mint Heaven Platform" className="w-full h-full object-cover rounded-lg" />
+      <Image src="/images/portfolio/mint-heaven/main.png" alt="Mint Heaven Platform" className="w-full h-full object-cover rounded-lg" />
     </div>
     <div className="col-span-4">
-      <img src="/images/portfolio/mint-heaven/feature1.png" alt="Feature 1" className="w-full h-full object-cover rounded-lg" />
+      <Image src="/images/portfolio/mint-heaven/feature1.png" alt="Feature 1" className="w-full h-full object-cover rounded-lg" />
     </div>
     <div className="col-span-4">
-      <img src="/images/portfolio/mint-heaven/feature2.png" alt="Feature 2" className="w-full h-full object-cover rounded-lg" />
+      <Image src="/images/portfolio/mint-heaven/feature2.png" alt="Feature 2" className="w-full h-full object-cover rounded-lg" />
     </div>
 
     {/* Title */}
@@ -32,6 +32,7 @@ export const DialogMintHeaven = () => (
         </div>
         <div className="flex flex-row items-center">
           <Button variant="default" size="lg"><PiMagicWandFill className="w-5 h-5 mr-3" />Demo</Button>
+          {/* @ts-expect-error */}
           <Tooltip
             html={<span className="text-md font-medium text-white/90">GitHub</span>}
             position="top"
@@ -50,24 +51,24 @@ export const DialogMintHeaven = () => (
 
       <h4 className="font-semibold mb-2 text-primary">Problem Description</h4>
       <p className="text-md text-black/60 mb-4">Engaging with multiple blockchain networks and accumulating a diverse on-chain activity history can be complex and time-consuming for users looking to qualify for potential airdrops. Many users lack the technical knowledge or tools to efficiently interact with various blockchain ecosystems.</p>
-      <img src="/images/portfolio/mint-heaven/hero1.png" alt="Feature 1" className="w-full h-20 object-cover rounded-lg mb-10" />
+      <Image src="/images/portfolio/mint-heaven/hero1.png" alt="Feature 1" className="w-full h-20 object-cover rounded-lg mb-10" />
       
       <h4 className="font-semibold mb-2 text-primary">Solution</h4>
       <p className="text-md text-black/60 mb-10">Mint Heaven provides a user-friendly interface for interacting with multiple blockchain networks, simplifying the process of minting NFTs and engaging in on-chain activities. This solution helps users build a diverse blockchain activity profile, potentially increasing their chances of qualifying for future airdrops.</p>
-      <img src="/images/portfolio/mint-heaven/process.png" alt="Feature 1" className="w-full object-cover rounded-lg" />
+      <Image src="/images/portfolio/mint-heaven/process.png" alt="Feature 1" className="w-full object-cover rounded-lg" />
     </div>
 
     <div className="col-span-3">
-      <img src="/images/portfolio/mint-heaven/blast-gunner.png" alt="Feature 2" className="w-full h-full object-cover rounded-lg" />
+      <Image src="/images/portfolio/mint-heaven/blast-gunner.png" alt="Feature 2" className="w-full h-full object-cover rounded-lg" />
     </div>
     <div className="col-span-3">
-      <img src="/images/portfolio/mint-heaven/to-the-moon.png" alt="Feature 2" className="w-full h-full object-cover rounded-lg" />
+      <Image src="/images/portfolio/mint-heaven/to-the-moon.png" alt="Feature 2" className="w-full h-full object-cover rounded-lg" />
     </div>
     <div className="col-span-3">
-      <img src="/images/portfolio/mint-heaven/bera-party-bear-nft.png" alt="Feature 2" className="w-full h-full object-cover rounded-lg" />
+      <Image src="/images/portfolio/mint-heaven/bera-party-bear-nft.png" alt="Feature 2" className="w-full h-full object-cover rounded-lg" />
     </div>
     <div className="col-span-3">
-      <img src="/images/portfolio/mint-heaven/scroll-to-the-moon.png" alt="Feature 2" className="w-full h-full object-cover rounded-lg" />
+      <Image src="/images/portfolio/mint-heaven/scroll-to-the-moon.png" alt="Feature 2" className="w-full h-full object-cover rounded-lg" />
     </div>
 
     <div className="col-span-8 bg-primary text-primary-foreground p-4 rounded-lg">

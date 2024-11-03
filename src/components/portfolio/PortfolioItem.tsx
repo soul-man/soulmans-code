@@ -1,18 +1,33 @@
 import React from 'react';
+import Image from 'next/image';
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Info } from "lucide-react";
+// import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+// import { Info } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
-import { PiMagicWandFill } from "react-icons/pi";
+// import { PiMagicWandFill } from "react-icons/pi";
 
-export const PortfolioItem = ({ item }: { item: any }) => (
+interface PortfolioItemProps {
+  item: {
+      id: string;
+      title: string;
+      description: string;
+      bgClass: string;
+      logo: string;
+      subtitle: string;
+      githubLink?: string;
+      demoLink?: string;
+  }
+}
+
+export const PortfolioItem: React.FC<PortfolioItemProps> = ({ item }) => {
+  return (
   <div className={`relative col-span-12 md:col-span-6 row-span-1 p-6 rounded-xl overflow-hidden ${item.bgClass}`}>
     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10"></div>
     <div className="relative h-full flex flex-col justify-between z-20 text-white">
       <div>
         <div className="flex flex-row items-center gap-3 mb-4">
-          <img src={item.logo} width="44" height="44" alt={`${item.title} logo`} />
+          <Image src={item.logo} width="44" height="44" alt={`${item.title} logo`} />
           <h3 className="text-2xl md:text-2xl font-bold">{item.title}</h3>
         </div>
         <div>
@@ -51,4 +66,4 @@ export const PortfolioItem = ({ item }: { item: any }) => (
       </div>
     </div>
   </div>
-);
+)};

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTheme } from '../../lib/context/ThemeContext';
 import { Sun, Moon } from 'lucide-react';
-import { Button } from './button';
+// import { Button } from './button';
 
 interface ThemeSwitchProps {
   onChange: (theme: string) => void;

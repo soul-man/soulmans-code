@@ -29,7 +29,7 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
           <section className="space-y-4">
             <h2 className="text-xl font-semibold text-primary">1. Introduction</h2>
             <p className="text-muted-foreground">
-              This Privacy Policy explains how we collect, use, and protect your personal information when you visit [Your Website URL] ("Website"). 
+              This Privacy Policy explains how we collect, use, and protect your personal information when you visit [Your Website URL] (&ldquo;Website&rdquo;). 
               By using our Website, you agree to the collection and use of information in accordance with this policy.
             </p>
           </section>
@@ -111,7 +111,7 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-xl font-semibold text-primary">8. Children's Privacy</h2>
+            <h2 className="text-xl font-semibold text-primary">8. Children&apos;s Privacy</h2>
             <p className="text-muted-foreground">
               Our Website is not intended for children under 13 years of age, and we do not knowingly collect personal information from children.
             </p>

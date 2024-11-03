@@ -11,6 +11,7 @@ import { SiTypescript } from "react-icons/si"
 import { IoMdArrowDropdown } from "react-icons/io";
 import { FaNodeJs } from 'react-icons/fa'
 import Header from "../layout/Header"
+import 'react-tippy/dist/tippy.css'
 
 const aiTools = [
     {
@@ -56,17 +57,17 @@ export default function Portfolio() {
                 {/* Intro text */}
                 <div className="p-2 md:p-0 w-12/12 md:w-8/12 text-lg text-center md:text-left">
                 <p className="text-text font-light md:text-xl mb-4">
-                    Hi I'm Florian, a passionate Full Stack Web Developer with 5+ years of experience in crypto-currencies and Web3 development.
+                    Hi I&apos;m Florian, a passionate Full Stack Web Developer with 5+ years of experience in crypto-currencies and Web3 development.
                 </p>
                 <p className="text-text font-light md:text-xl mb-4">
-                    I enjoy creating <b>Decentralized applications "DAPPS"</b> that are simple, clean, and sleek, 
+                    I enjoy creating <b>Decentralized applications &quot;DAPPS&quot;</b> that are simple, clean, and sleek, 
                     delivering real value to users. 
                     I am skilled in Next.js and with a strong foundation in UX/UI, I design intuitive, 
                     user-friendly, and visually appealing interfaces.
                 </p>
 
                 <p className="text-text font-light md:text-xl">
-                    I’m always enthusiastic about learning and integrating new 
+                    I&apos;m always enthusiastic about learning and integrating new 
                     technologies to enhance my work.
                 </p>
 
@@ -139,17 +140,18 @@ export default function Portfolio() {
                                     trigger="mouseenter"
                                     arrow={true}
                                     theme="dark"
-                                >
-                                    <div>
-                                        <Image
-                                            src={tool.image}
-                                            width={40}
-                                            height={40}
-                                            alt={tool.alt}
-                                            title={tool.title}
-                                        />
-                                    </div>
-                                </Tooltip>
+                                    html={
+                                        <div>
+                                            <Image
+                                                src={tool.image}
+                                                width={40}
+                                                height={40}
+                                                alt={tool.alt}
+                                                title={tool.title}
+                                            />
+                                        </div>
+                                    }
+                                />
                             </div>
                         ))}
                     </div>

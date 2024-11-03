@@ -8,13 +8,13 @@ import { FaGithub } from "react-icons/fa";
 export const DialogFirstMovers = () => (
   <div className="grid grid-cols-12 gap-4">
     <div className="col-span-8 row-span-2">
-      <img src="/images/portfolio/first-movers/main.png" alt="First Movers Club" className="w-full h-full object-cover rounded-lg" />
+      <Image src="/images/portfolio/first-movers/main.png" alt="First Movers Club" className="w-full h-full object-cover rounded-lg" />
     </div>
     <div className="col-span-4">
-      <img src="/images/portfolio/first-movers/bg-rarity-small.png" alt="Rarity Chart" className="w-full h-full object-cover rounded-lg" />
+      <Image src="/images/portfolio/first-movers/bg-rarity-small.png" alt="Rarity Chart" className="w-full h-full object-cover rounded-lg" />
     </div>
     <div className="col-span-4">
-      <img src="/images/portfolio/first-movers/first-movers_small.gif" alt="NFT Animation" className="w-full h-full object-cover rounded-lg" />
+      <Image src="/images/portfolio/first-movers/first-movers_small.gif" alt="NFT Animation" className="w-full h-full object-cover rounded-lg" />
     </div>
 
     {/* Title */}
@@ -29,6 +29,7 @@ export const DialogFirstMovers = () => (
         </div>
         <div className="flex flex-row items-center">
           <Button variant="default" size="lg"><PiMagicWandFill className="w-5 h-5 mr-3" />Demo</Button>
+          {/* @ts-expect-error */}
           <Tooltip
             html={<span className="text-md font-medium text-white/90">GitHub</span>}
             position="top"
@@ -43,7 +44,7 @@ export const DialogFirstMovers = () => (
     <div className="col-span-12 rounded-lg mb-4">
       <h4 className="text-2xl font-bold mb-2 text-black">Project Description</h4>
       <p className="text-lg text-black/60">
-        The First Movers Club is an ERC721 NFT collection that celebrates the early adopters of the cryptocurrency world—those who experienced pivotal moments in crypto history and helped shape the landscape we know today. The collection is not only a tribute to the pioneers, or "OGs," but also captures the spirit of the crypto meme community, infusing humor and nostalgia into each NFT.
+        The First Movers Club is an ERC721 NFT collection that celebrates the early adopters of the cryptocurrency world—those who experienced pivotal moments in crypto history and helped shape the landscape we know today. The collection is not only a tribute to the pioneers, or OGs, but also captures the spirit of the crypto meme community, infusing humor and nostalgia into each NFT.
       
         The First Movers collection pays homage to those who were there during the early, volatile days of cryptocurrency. They are the pioneers who believed in crypto when it was still emerging, those who invested in projects like NEO (formerly Antshares) and received airdrops like 100k XRP.
 
@@ -62,7 +63,7 @@ The enduring challenges of the Crypto Winter, when market prices plummeted. The 
 
     {/* Line image */}
     <div className="col-span-12 rounded-lg mb-3">
-      <img src="/images/portfolio/first-movers/many-first-movers-yellow.png" alt="Collection Preview" className="w-full h-30 object-cover rounded-lg" />
+      <Image src="/images/portfolio/first-movers/many-first-movers-yellow.png" alt="Collection Preview" className="w-full h-30 object-cover rounded-lg" />
     </div>
 
     <div className="col-span-12 rounded-lg mb-4">
@@ -71,17 +72,17 @@ The enduring challenges of the Crypto Winter, when market prices plummeted. The 
     </div>
 
     <div className="col-span-4 rounded-lg mb-3">
-      <img src="/images/portfolio/first-movers/blender3d_02_first_movers.jpg" alt="Collection Preview" className="w-full h-30 object-cover rounded-lg" />
+      <Image src="/images/portfolio/first-movers/blender3d_02_first_movers.jpg" alt="Collection Preview" className="w-full h-30 object-cover rounded-lg" />
     </div>
     <div className="col-span-4 rounded-lg mb-3">
-      <img src="/images/portfolio/first-movers/blender3d_01_first_movers.jpg" alt="Collection Preview" className="w-full h-30 object-cover rounded-lg" />
+      <Image src="/images/portfolio/first-movers/blender3d_01_first_movers.jpg" alt="Collection Preview" className="w-full h-30 object-cover rounded-lg" />
     </div>
     <div className="col-span-4 rounded-lg mb-3">
-      <img src="/images/portfolio/first-movers/blender3d_03_first_movers.jpg" alt="Collection Preview" className="w-full h-30 object-cover rounded-lg" />
+      <Image src="/images/portfolio/first-movers/blender3d_03_first_movers.jpg" alt="Collection Preview" className="w-full h-30 object-cover rounded-lg" />
     </div>
 
     <div className="col-span-12 rounded-lg my-24">
-      <img src="/images/portfolio/first-movers/opensea-banner.jpg" alt="Collection Preview" className="w-full h-30 object-cover rounded-lg" />
+      <Image src="/images/portfolio/first-movers/opensea-banner.jpg" alt="Collection Preview" className="w-full h-30 object-cover rounded-lg" />
     </div>
 
     <div className="col-span-6 rounded-lg mb-3">
@@ -92,7 +93,7 @@ The enduring challenges of the Crypto Winter, when market prices plummeted. The 
       </p>
     </div>
     <div className="col-span-6 rounded-lg mb-3">
-      <img src="/images/portfolio/first-movers/traits.png" alt="Collection Preview" className="w-full h-30 object-cover rounded-lg" />
+      <Image src="/images/portfolio/first-movers/traits.png" alt="Collection Preview" className="w-full h-30 object-cover rounded-lg" />
     </div>
 
     <div className="col-span-6 bg-blue-600 text-primary-foreground p-4 rounded-lg">

@@ -1,5 +1,4 @@
 import React from 'react';
-import { PrivacyPolicyDialog } from './PrivacyPolicyDialog';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();

@@ -8,7 +8,7 @@ interface HeaderProps {
     toggleBanner: () => void;
 }
 
-export default function Header({ bannerImage, toggleBanner }: HeaderProps) {
+export default function Header({ bannerImage }: HeaderProps) {
     return (
         <div className="relative">
             <div className="relative h-32 md:h-44 bg-gradient-to-r from-blue-700 via-blue-500 to-blue-300 rounded-2xl">

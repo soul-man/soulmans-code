@@ -8,7 +8,7 @@ import { FaGithub } from "react-icons/fa";
 export const DialogCurioInsights = () => (
   <div className="grid grid-cols-12 gap-4">
     <div className="col-span-12 row-span-2">
-      <img src="/images/portfolio/curio-dao/main.jpg" alt="Curio Insights Dashboard" className="w-full h-full object-cover rounded-lg" />
+      <Image src="/images/portfolio/curio-dao/main.jpg" alt="Curio Insights Dashboard" className="w-full h-full object-cover rounded-lg" />
     </div>
 
     {/* Title */}
@@ -23,6 +23,7 @@ export const DialogCurioInsights = () => (
         </div>
         <div className="flex flex-row items-center">
           <Button variant="default" size="lg"><PiMagicWandFill className="w-5 h-5 mr-3" />Demo</Button>
+          {/* @ts-expect-error */}
           <Tooltip
             html={<span className="text-md font-medium text-white/90">GitHub</span>}
             position="top"
@@ -42,10 +43,10 @@ export const DialogCurioInsights = () => (
     </div>
 
     <div className="col-span-4">
-      <img src="/images/portfolio/curio-dao/feature1.png" alt="Feature 1" className="w-full h-full object-cover rounded-lg" />
+      <Image src="/images/portfolio/curio-dao/feature1.png" alt="Feature 1" className="w-full h-full object-cover rounded-lg" />
     </div>
     <div className="col-span-4">
-      <img src="/images/portfolio/curio-dao/feature2.png" alt="Feature 2" className="w-full h-full object-cover rounded-lg" />
+      <Image src="/images/portfolio/curio-dao/feature2.png" alt="Feature 2" className="w-full h-full object-cover rounded-lg" />
     </div>
 
     <div className="col-span-6 bg-primary text-primary-foreground p-4 rounded-lg">

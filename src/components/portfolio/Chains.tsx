@@ -42,7 +42,8 @@ const Chains = () => {
         <p className="text-md md:text-sm px-10 md:px-0 md:pr-5 font-light text-text-50 mb-4 md:mb-2">Blockchains and Level 2 Rollups powering my DApps</p>
         <div className='flex flex-row flex-wrap justify-center md:justify-start items-center gap-1 z-50 pointer-events-auto'>
           {chains.map((chain, index) => (
-            <div className="p-1 bg-accent-secondary rounded-xl hover:scale-110 duration-300">
+            <div key={chain.name} className="p-1 bg-accent-secondary rounded-xl hover:scale-110 duration-300">
+              {/* @ts-expect-error */}{/* Unfixable error  */}
               <Tooltip
                 key={index}
                 html={<span className="px-2 py-1 text-lg font-medium text-white/90 rounded-xl">{chain.name}</span>}
