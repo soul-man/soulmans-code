@@ -128,17 +128,17 @@ export default function ContactDialog() {
     return (
         <Dialog>
             <DialogTrigger asChild>
-                <Button className="rounded-full mt-2 text-lg md:mr-5" variant="default" size="lg">
-                    <MessageSquare className="w-5 h-5 mr-2 mt-1" />
+                <Button className="rounded-full mt-2 text-lg md:mr-10" variant="default" size="lg">
+                    <MessageSquare className="w-6 h-6 mr-3 mt-1" />
                     Send a Message
                 </Button>                        
             </DialogTrigger>
-            <DialogContent className="sm:max-w-[700px] max-h-[80vh] overflow-y-auto bg-background border-2 border-accent-primary rounded-2xl">
+            <DialogContent className="sm:max-w-[700px] max-h-[80vh] overflow-y-auto bg-white border-4 border-blue-200 !rounded-[24px]">
                 <DialogHeader>
-                    <DialogTitle className="text-2xl font-bold text-headline">Let&apos;s Connect</DialogTitle>
+                    <DialogTitle className="text-3xl font-bold text-black">Let&apos;s Connect</DialogTitle>
                 </DialogHeader>
                 <div className="mt-3">
-                    <p className="text-text-70 text-lg mb-8">
+                    <p className="text-black/70 text-lg mb-8">
                         Feel free to reach out for collaborations or just a friendly chat.
                     </p>
                     {alertInfo.display && (
@@ -150,7 +150,7 @@ export default function ContactDialog() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                                 <div className="flex justify-between items-center mb-2">
-                                    <label htmlFor="name" className="block text-sm font-medium text-text">
+                                    <label htmlFor="name" className="block text-sm font-medium text-black">
                                         Name
                                     </label>
                                     {formErrors.name ? (
@@ -165,12 +165,12 @@ export default function ContactDialog() {
                                     value={name}
                                     onChange={(e) => setName(e.target.value)}
                                     placeholder="Your name" 
-                                    className="w-full px-4 py-3 rounded-xl bg-accent-secondary border-2 border-accent-primary focus:outline-none focus:ring-2 focus:ring-accent-primary text-text placeholder:text-text-50"
+                                    className="w-full px-4 py-3 rounded-xl bg-gray-100 border-2 border-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-200 text-black placeholder:text-black-50"
                                 />
                             </div>
                             <div>
                                 <div className="flex justify-between items-center mb-2">
-                                    <label htmlFor="email" className="block text-sm font-medium text-text">
+                                    <label htmlFor="email" className="block text-sm font-medium text-black">
                                         Email
                                     </label>
                                     {formErrors.email ? (
@@ -186,13 +186,13 @@ export default function ContactDialog() {
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                     placeholder="Your email" 
-                                    className="w-full px-4 py-3 rounded-xl bg-accent-secondary border-2 border-accent-primary focus:outline-none focus:ring-2 focus:ring-accent-primary text-text placeholder:text-text-50"
+                                    className="w-full px-4 py-3 rounded-xl bg-gray-100 border-2 border-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-200 text-black placeholder:text-black-50"
                                 />
                             </div>
                         </div>
                         <div>
                             <div className="flex justify-between items-center mb-2">
-                                <label htmlFor="subject" className="block text-sm font-medium text-text">
+                                <label htmlFor="subject" className="block text-sm font-medium text-black">
                                     Subject
                                 </label>
                                 {formErrors.subject ? (
@@ -207,12 +207,12 @@ export default function ContactDialog() {
                                 value={subject}
                                 onChange={(e) => setSubject(e.target.value)}
                                 placeholder="Subject of your message" 
-                                className="w-full px-4 py-3 rounded-xl bg-accent-secondary border-2 border-accent-primary focus:outline-none focus:ring-2 focus:ring-accent-primary text-text placeholder:text-text-50"
+                                className="w-full px-4 py-3 rounded-xl bg-gray-100 border-2 border-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-200 text-black placeholder:text-black-50"
                             />
                         </div>
                         <div>
                             <div className="flex justify-between items-center mb-2">
-                                <label htmlFor="message" className="block text-sm font-medium text-text">
+                                <label htmlFor="message" className="block text-sm font-medium text-black">
                                     Message
                                 </label>
                                 {formErrors.message ? (
@@ -228,7 +228,7 @@ export default function ContactDialog() {
                                 onChange={(e) => setMessage(e.target.value)}
                                 placeholder="Your message" 
                                 rows={4} 
-                                className="w-full px-4 py-3 rounded-xl bg-accent-secondary border-2 border-accent-primary focus:outline-none focus:ring-2 focus:ring-accent-primary text-text placeholder:text-text-50 resize-none"
+                                className="w-full px-4 py-3 rounded-xl bg-gray-100 border-2 border-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-200 text-black placeholder:text-black-50 resize-none"
                             />
                         </div>
                         <Button 
@@ -236,7 +236,7 @@ export default function ContactDialog() {
                             variant="default" 
                             size="lg"
                             disabled={!isFormValid || disabled}
-                            className="rounded-full mt-2 text-lg md:mr-5 w-full"                        >
+                            className="rounded-full mt-2 text-lg md:mr-5 w-full h-12"                        >
                             Send Message
                         </Button>
                     </form>

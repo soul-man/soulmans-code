@@ -8,7 +8,7 @@ export const Footer = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent -z-10"></div>
       <div className="max-w-4xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-center items-center gap-4">
-          <div className="text-accent-secondary text-sm">
+          <div className="text-white/70 text-sm">
             © {currentYear} All rights reserved
           </div>
           

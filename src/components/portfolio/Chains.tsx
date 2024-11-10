@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { Tooltip } from 'react-tippy';
 
 const chains = [
   {
@@ -39,17 +38,10 @@ const Chains = () => {
     <div className='relative mx-auto mt-10 mb-10'>
       <div className="relative text-center md:text-left">
         <h2 className="text-3xl md:text-xl font-semibold text-headline mb-2">Blockchains</h2>
-        <p className="text-md md:text-sm px-10 md:px-0 md:pr-5 font-light text-text-50 mb-4 md:mb-2">Blockchains and Level 2 Rollups powering my DApps</p>
+        <p className="text-md md:text-sm px-10 md:px-0 md:pr-5 font-light text-black/80 mb-4 md:mb-2">Blockchains and Level 2 Rollups powering my DApps</p>
         <div className='flex flex-row flex-wrap justify-center md:justify-start items-center gap-1 z-50 pointer-events-auto'>
-          {chains.map((chain, index) => (
-            <div key={chain.name} className="p-1 bg-accent-secondary rounded-xl hover:scale-110 duration-300">
-              {/* @ts-expect-error */}{/* Unfixable error  */}
-              <Tooltip
-                key={index}
-                html={<span className="px-2 py-1 text-lg font-medium text-white/90 rounded-xl">{chain.name}</span>}
-                position="top"
-                trigger="mouseenter"
-              >
+          {chains.map((chain) => (
+            <div key={chain.name} className="p-1.5 bg-black/5 rounded-xl">
                 <Image
                   src={chain.image}
                   width="30"
@@ -58,10 +50,7 @@ const Chains = () => {
                   title={chain.title}
                   className="w-9 h-9 md:w-7 md:h-7"
                 />
-              </Tooltip>
-              
             </div>
-
           ))}
         </div>
       </div>
